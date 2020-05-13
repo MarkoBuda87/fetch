@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenti</title>
+</head>
+<body>
+    <script>
+        class Student {
+             constructor(name, address, phone, course){
+                 this.name = name;
+                 this.address = address;
+                 this.phone = phone;
+                 this.course = course;
+             }
+
+             getname() {
+                 return this.name +" "+ this.address;
+             }
+
+             getInfo() {
+                 return "Name: " + this.name + "\n" +
+                     "Address: " + this.address + "\n" +
+                     "Phone: " + this.phone + "\n" +
+                     "Course: " + this.course        
+             }
+        }
+
+        var student1 = new Student("Sandra Budimirovic", "Beograd, Viktora Novaka 1", 381644143322, "Engleski jezik");
+        var student2 = new Student("Dijana Bibic", "Beograd, Ratka Mitrovica 13", 381602175352, "Turizam i ugostiteljstvo");
+        var student3 = new Student("Ana Budimirovic", "Zemun, Milana Uzelca 3", 381642137577, "Kozmetičar-estetičar");
+
+		
+        console.log(student1.getInfo())
+		console.log(student2.getInfo())
+		console.log(student3.getInfo())
+    </script>
+</body>
+</html>
